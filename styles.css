@@ -1,5 +1,5 @@
 :root {
-  --background: #f4f6f8;
+  --background: #ffffff;
   --text: #202938;
   --muted: #5d6878;
   --accent: #2459a6;
@@ -97,14 +97,15 @@ section {
 }
 
 .intro {
-  padding: 62px 0 48px;
-  margin-bottom: 32px;
+  padding: 56px 0 48px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid var(--border);
 }
 
 .intro-label {
   color: var(--accent);
-  font-family: Consolas, "Courier New", monospace;
   font-size: 14px;
+  font-weight: 600;
 }
 
 h1 {
@@ -115,9 +116,15 @@ h1 {
 }
 
 .intro-text {
-  max-width: 660px;
+  max-width: 720px;
   font-size: 18px;
   color: var(--muted);
+}
+
+.intro-location {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .intro-links {
@@ -182,9 +189,9 @@ h3 {
 
 .project {
   padding: 28px;
-  background: white;
+  background: #f8fafc;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .project-heading {

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samuel Dawit's resume: software projects, computer science education, experience, and technical skills.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Resume | Samuel Dawit</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="resume.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="site-name" href="index.html">Samuel Dawit</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="resume.html" aria-current="page">Resume</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container resume-page">
+    <div class="resume-toolbar">
+      <h1>Resume</h1>
+      <button class="button" id="print-resume" type="button" hidden>Print / Save PDF</button>
+    </div>
+
+    <article class="resume" aria-label="Samuel Dawit's resume">
+      <header class="resume-header">
+        <h2>Samuel Dawit</h2>
+        <p>Bellevue, WA · <a href="mailto:samueldawit354@gmail.com">samueldawit354@gmail.com</a></p>
+        <p><a href="https://github.com/sam-dawit">github.com/sam-dawit</a> · <a href="https://eotc-us.vercel.app/">eotc-us.vercel.app</a></p>
+      </header>
+
+      <section aria-labelledby="resume-projects">
+        <h2 id="resume-projects">Projects</h2>
+        <div class="resume-entry">
+          <h3>EOTC-US</h3>
+          <p class="resume-stack">TypeScript, JavaScript, React Native, Expo, Supabase, Vercel</p>
+          <ul>
+            <li>Integrated a Supabase database with search, location-based sorting, and state and city filters for 193 approved U.S. church listings.</li>
+            <li>Deployed the website on Vercel and exported Android and iOS application bundles with React Native and Expo.</li>
+            <li>Supported 14 bilingual articles through English and Amharic interfaces, with state-based church browsing when location permission is unavailable.</li>
+          </ul>
+        </div>
+        <div class="resume-entry">
+          <h3>Mezgebe Tselot</h3>
+          <p class="resume-stack">React Native, Expo, TypeScript, AsyncStorage; Python API prototype</p>
+          <ul>
+            <li>Implemented English and Amharic verse search across local books and chapters, with persistent bookmarks and reading progress.</li>
+            <li>Developed a Python backend prototype with FastAPI and MongoDB for chapter retrieval, verse search, and nearby-church lookup; later archived the prototype.</li>
+          </ul>
+        </div>
+        <div class="resume-entry">
+          <h3>DMKM Church Website</h3>
+          <p class="resume-stack">React, JavaScript, Tailwind CSS, react-i18next</p>
+          <ul>
+            <li>Organized sermons, Sunday School information, resources, and contact details into four sections with reusable navigation, carousel, and video components.</li>
+            <li>Implemented English and Amharic language switching across a responsive React interface.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="resume-education">
+        <h2 id="resume-education">Education</h2>
+        <div class="resume-entry">
+          <div class="resume-entry-heading"><h3>Bellevue College</h3><span>Expected June 2028</span></div>
+          <p>Bachelor's in Computer Science · GPA: 3.62</p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-heading"><h3>Bellevue College</h3><span>June 2026</span></div>
+          <p>Associate in Arts and Sciences DTA, With Honors</p>
+          <p><strong>Relevant coursework:</strong> C++ Data Structures, Computer Science I and II, Python Programming, C# Programming, Linear Algebra, Calculus I</p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-heading"><h3>Newport High School</h3><span>June 2026</span></div>
+          <p>High School Diploma</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="resume-experience">
+        <h2 id="resume-experience">Experience</h2>
+        <div class="resume-entry">
+          <div class="resume-entry-heading"><h3>Deacon</h3><span>April 2026 – Present</span></div>
+          <p>Abune Gebre Menfes Kidus Ethiopian Orthodox Church · Kent, WA</p>
+          <ul>
+            <li>Collaborate with priests and fellow clergy to coordinate liturgical services and support an orderly, welcoming environment for the congregation.</li>
+            <li>Participate in public Scripture readings and Ge'ez hymns, coordinating with the choir and clergy throughout services.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="resume-skills">
+        <h2 id="resume-skills">Technical Skills</h2>
+        <p><strong>Languages:</strong> C++, Python, C#, TypeScript, JavaScript, HTML, CSS</p>
+        <p><strong>Application development:</strong> React, React Native, Expo, Tailwind CSS, FastAPI (prototype)</p>
+        <p><strong>Data and tools:</strong> Supabase, AsyncStorage, MongoDB (prototype), REST APIs, GitHub, Vercel</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="container">
+    <p>© 2026 Samuel Dawit</p>
+    <a href="index.html">Back to portfolio</a>
+  </footer>
+</body>
+</html>

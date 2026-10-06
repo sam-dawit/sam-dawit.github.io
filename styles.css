@@ -363,3 +363,192 @@ footer {
     scroll-behavior: auto;
   }
 }
+
+nav a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.resume-page {
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.resume-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.resume-toolbar h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+button.button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button[hidden] {
+  display: none;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.resume {
+  padding: 40px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.resume-header {
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.resume-header h2 {
+  font-size: 30px;
+}
+
+.resume p {
+  margin: 6px 0;
+  overflow-wrap: anywhere;
+}
+
+.resume section {
+  margin-bottom: 28px;
+}
+
+.resume section:last-child {
+  margin-bottom: 0;
+}
+
+.resume section h2 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-size: 19px;
+}
+
+.resume h3 {
+  font-size: 16px;
+}
+
+.resume-entry {
+  margin-top: 18px;
+}
+
+.resume-entry-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.resume-entry-heading span,
+.resume-stack {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.resume ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.resume li + li {
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .resume {
+    padding: 22px;
+  }
+
+  .resume-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .resume-entry-heading {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media print {
+  @page {
+    size: auto;
+    margin: 14mm;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .site-header,
+  .skip-link,
+  .resume-toolbar,
+  footer {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .resume-page,
+  .resume {
+    padding: 0;
+    border: 0;
+  }
+
+  .resume {
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  .resume-header {
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+  }
+
+  .resume-header h2 {
+    font-size: 22pt;
+  }
+
+  .resume section {
+    margin-bottom: 16px;
+  }
+
+  .resume section h2 {
+    font-size: 12pt;
+    break-after: avoid;
+  }
+
+  .resume h3 {
+    font-size: 11pt;
+  }
+
+  .resume-entry {
+    margin-top: 12px;
+    break-inside: avoid;
+  }
+
+  .resume-entry-heading {
+    flex-direction: row;
+  }
+
+  .resume a,
+  .resume-stack,
+  .resume-entry-heading span {
+    color: black;
+    font-size: inherit;
+  }
+}

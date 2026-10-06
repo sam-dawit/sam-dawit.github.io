@@ -7,6 +7,8 @@ The site uses plain HTML and CSS and is hosted on GitHub Pages.
 ## Files
 
 - `index.html`: project descriptions, education, skills, and contact links
+- `resume.html`: public resume page
+- `resume.js`: browser print button
 - `styles.css`: layout and styling, including the mobile layout
 - `favicon.svg`: browser tab icon
 

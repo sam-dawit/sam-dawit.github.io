@@ -1,48 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Samuel Dawit is a computer science student building bilingual web and mobile applications. Explore selected projects, technical skills, and experience.">
-  <meta name="theme-color" content="#f7f7f2">
-  <meta property="og:title" content="Samuel Dawit — Software Developer">
-  <meta property="og:description" content="Thoughtful software for everyday connections. Web, mobile, and bilingual experiences.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samuel Dawit's portfolio. Computer science student at Bellevue College building web and mobile apps.">
+  <meta name="theme-color" content="#f4f6f8">
+  <meta property="og:title" content="Samuel Dawit | Portfolio">
+  <meta property="og:description" content="Computer science student at Bellevue College. Projects, education, and contact information.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sam-dawit.github.io/">
-  <title>Samuel Dawit — Software Developer</title>
+  <title>Samuel Dawit | Portfolio</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="header wrap">
-  <a class="wordmark" href="#" aria-label="Samuel Dawit home">sd<span>.</span></a>
-  <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
-</header>
-<main id="main">
-  <section class="hero wrap" aria-labelledby="intro-title">
-    <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Bellevue, WA · Computer science student</div>
-    <h1 id="intro-title">Hi, I’m Samuel.<br>I build software<br>that <span>connects people.</span></h1>
-    <div class="hero-bottom"><p>I create web and mobile applications with a focus on useful features, thoughtful interfaces, and access across languages.</p><a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a></div>
-    <div class="hero-note"><span>Currently studying at Bellevue College</span><span>Seeking summer 2027 software internships</span></div>
-  </section>
-  <section class="work wrap section" id="work" aria-labelledby="work-title">
-    <div class="section-heading"><div><p class="eyebrow">Selected work / 01</p><h2 id="work-title">Built with purpose.</h2></div><p>Independent projects, from idea to interface.</p></div>
-    <article class="project featured">
-      <div class="project-art church-art" aria-hidden="true"><div class="mock-window"><div class="mock-bar"><b>EOTC-US</b><span>EN / አማ</span></div><div class="mock-map"><i class="pin p1"></i><i class="pin p2"></i><i class="pin p3"></i><i class="pin p4"></i><div class="map-card"><span class="tiny">FIND YOUR COMMUNITY</span><strong>A little closer<br>to home.</strong><span class="map-button">Explore churches ↗</span></div></div><div class="mock-foot"><span>Church directory</span><span>Faith resources</span></div></div><span class="art-caption">Web + mobile</span></div>
-      <div class="project-copy"><div class="project-number">01 / COMMUNITY PLATFORM</div><h3>EOTC-US</h3><p>A bilingual church discovery platform that helps people find Ethiopian Orthodox communities and explore faith resources in English and Amharic.</p><ul class="details"><li>Search and location-based sorting across 193 church listings.</li><li>14 bilingual articles with language-switching interfaces.</li><li>Live website with a companion React Native app.</li></ul><ul class="tags" aria-label="Technologies"><li>TypeScript</li><li>React Native</li><li>Supabase</li><li>Vercel</li></ul><a class="text-link" href="https://eotc-us.vercel.app/">Visit website <span aria-hidden="true">↗</span></a></div>
-    </article>
-    <div class="project-grid">
-      <article class="project compact"><div class="project-art reading-art" aria-hidden="true"><div class="book-mark">ሀ<span>ENGLISH + AMHARIC</span></div><div class="reading-lines"><i></i><i></i><i></i></div><span class="art-caption">A more personal reading experience</span></div><div class="project-copy"><div class="project-number">02 / MOBILE APPLICATION</div><h3>Mezgebe Tselot</h3><p>A bilingual reading app with verse search, bookmarks, and saved reading progress. Locally stored content and persistent storage help readers return to what matters.</p><ul class="tags" aria-label="Technologies"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>AsyncStorage</li></ul><span class="project-status">Independent mobile project</span></div></article>
-      <article class="project compact"><div class="project-art community-art" aria-hidden="true"><div class="tile tile-one">Learn<span>Sunday School</span></div><div class="tile tile-two">Listen<span>Sermons</span></div><div class="tile tile-three">Connect<span>Community</span></div><span class="art-caption">One community. Two languages.</span></div><div class="project-copy"><div class="project-number">03 / COMMUNITY WEBSITE</div><h3>DMKM</h3><p>A responsive English and Amharic church website that brings sermons, Sunday School information, resources, and contact details into four easy-to-navigate sections.</p><ul class="tags" aria-label="Technologies"><li>React</li><li>JavaScript</li><li>Tailwind CSS</li><li>react-i18next</li></ul><span class="project-status">Independent web project</span></div></article>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="site-name" href="#home">Samuel Dawit</a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </section>
-  <section class="about wrap section" id="about" aria-labelledby="about-title">
-    <div><p class="eyebrow">A little about me / 02</p><h2 id="about-title">Curious by nature.<br>Community at heart.</h2><p class="about-description">I’m a computer science student in Bellevue, Washington. My projects grow out of the communities I’m part of—from helping people find a church to making resources easier to read in their preferred language.</p><p class="about-description">Outside of development, I serve as a deacon at Abune Gebre Menfes Kidus Ethiopian Orthodox Church, collaborating with clergy and the choir during services. It’s a role that calls for communication, coordination, and care for others.</p><a class="text-link" href="https://github.com/sam-dawit">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
-    <div class="about-facts"><div class="fact"><span class="eyebrow">Education</span><h3>Bellevue College</h3><p>Bachelor’s in Computer Science<br>Expected June 2028</p><p>Associate in Arts and Sciences DTA<br>With Honors · June 2026</p></div><div class="fact"><span class="eyebrow">Languages & tools</span><ul class="skill-list"><li>C++</li><li>Python</li><li>C#</li><li>TypeScript</li><li>JavaScript</li><li>HTML / CSS</li><li>React</li><li>React Native</li><li>Expo</li><li>Supabase</li><li>GitHub</li><li>REST APIs</li></ul></div><div class="availability"><span class="dot" aria-hidden="true"></span><p>Open to summer 2027 opportunities<br><span>Willing to relocate</span></p></div></div>
-  </section>
-  <section class="contact wrap section" id="contact" aria-labelledby="contact-title"><p class="eyebrow">Let’s connect / 03</p><h2 id="contact-title">Have something<br>in mind?</h2><div class="contact-bottom"><p>I’d love to hear about internship opportunities,<br class="desktop-break"> interesting projects, or a chance to collaborate.</p><a class="button" href="mailto:samueldawit354@gmail.com">Say hello <span aria-hidden="true">↗</span></a></div><a class="email" href="mailto:samueldawit354@gmail.com">samueldawit354@gmail.com</a></section>
-</main>
-<footer class="wrap"><span>© 2026 Samuel Dawit</span><a href="https://github.com/sam-dawit">GitHub ↗</a><a href="#">Back to top ↑</a></footer>
+  </header>
+
+  <main id="main" class="container">
+    <section id="home" class="intro" aria-labelledby="intro-title">
+      <p class="intro-label">Computer Science Student · Bellevue, WA</p>
+      <h1 id="intro-title">Hi, I'm Samuel.</h1>
+      <p class="intro-text">
+        I'm studying computer science at Bellevue College. I build websites and
+        mobile apps, including English and Amharic resources for my church community.
+        I'm looking for a software engineering internship for summer 2027.
+      </p>
+      <div class="intro-links">
+        <a class="button" href="#projects">View projects</a>
+        <a class="button button-outline" href="https://github.com/sam-dawit">GitHub</a>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <p class="section-description">A few things I've been working on outside of class.</p>
+
+      <div class="project-list">
+        <article class="project">
+          <div class="project-heading">
+            <h3>EOTC-US</h3>
+            <span class="project-type">Web &amp; mobile</span>
+          </div>
+          <p>
+            I built a directory to help people find Ethiopian Orthodox churches
+            across the United States. It also includes faith resources in English
+            and Amharic.
+          </p>
+          <ul>
+            <li>Search, state and city filters, and location-based sorting for 193 church listings.</li>
+            <li>Language switching for 14 bilingual articles.</li>
+            <li>A website deployed on Vercel and a companion React Native app.</li>
+          </ul>
+          <p class="tech-stack">TypeScript · JavaScript · React Native · Expo · Supabase · Vercel</p>
+          <a class="project-link" href="https://eotc-us.vercel.app/">Visit EOTC-US <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project">
+          <div class="project-heading">
+            <h3>Mezgebe Tselot</h3>
+            <span class="project-type">Mobile app</span>
+          </div>
+          <p>
+            An English and Amharic reading app with verse search, bookmarks, and
+            saved reading progress. I wanted readers to be able to find a passage
+            and pick up where they left off.
+          </p>
+          <ul>
+            <li>Search across Bible books and chapters stored in the app.</li>
+            <li>Bookmarks and reading progress saved with AsyncStorage.</li>
+            <li>Church browsing with a fallback when location permission is unavailable.</li>
+          </ul>
+          <p class="tech-stack">React Native · Expo · TypeScript · AsyncStorage</p>
+        </article>
+
+        <article class="project">
+          <div class="project-heading">
+            <h3>DMKM Church Website</h3>
+            <span class="project-type">Website</span>
+          </div>
+          <p>
+            A church website with English and Amharic language options. I organized
+            the content so visitors can find sermons, Sunday School information,
+            resources, and contact details.
+          </p>
+          <ul>
+            <li>Four sections with shared navigation and reusable components.</li>
+            <li>Language switching with react-i18next.</li>
+            <li>Responsive layouts, an image carousel, and video lists.</li>
+          </ul>
+          <p class="tech-stack">React · JavaScript · Tailwind CSS · react-i18next</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            Most of my projects start with something I want to make easier for
+            my community. Building bilingual apps has given me practice with
+            interfaces, databases, and storing data between sessions.
+          </p>
+          <p>
+            I also serve as a deacon at Abune Gebre Menfes Kidus Ethiopian Orthodox
+            Church in Kent. I work with the clergy and choir during services,
+            read Scripture, and sing Ge'ez hymns.
+          </p>
+        </div>
+        <div class="education">
+          <h3>Education</h3>
+          <p><strong>Bellevue College</strong></p>
+          <p>Bachelor's in Computer Science<br><span class="muted">Expected June 2028</span></p>
+          <p>Associate in Arts and Sciences DTA<br><span class="muted">With Honors · June 2026</span></p>
+        </div>
+      </div>
+
+      <h3 class="skills-heading">Technical skills</h3>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>C++, Python, C#, TypeScript, JavaScript, HTML, CSS</dd></div>
+        <div><dt>Frameworks</dt><dd>React, React Native, Expo, Tailwind CSS</dd></div>
+        <div><dt>Data &amp; tools</dt><dd>Supabase, AsyncStorage, REST APIs, GitHub, Vercel</dd></div>
+      </dl>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>I'm open to internship opportunities and willing to relocate.</p>
+      <div class="contact-links">
+        <a href="mailto:samueldawit354@gmail.com">samueldawit354@gmail.com</a>
+        <a href="https://github.com/sam-dawit">github.com/sam-dawit</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© 2026 Samuel Dawit</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
 </body>
 </html>

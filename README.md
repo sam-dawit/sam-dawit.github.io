@@ -1,17 +1,23 @@
-# Samuel Dawit — Portfolio
+# My portfolio
 
-Personal portfolio: https://sam-dawit.github.io/
+My personal website: https://sam-dawit.github.io/
 
-A responsive, accessible static website featuring selected software projects, education, and community experience. Built with HTML and CSS, without external libraries, analytics, or build dependencies.
+The site uses plain HTML and CSS and is hosted on GitHub Pages.
 
-## Update
+## Files
 
-- Edit `index.html` to update project descriptions, education, or links.
-- Edit `styles.css` to change the design.
-- GitHub Pages publishes from the root of the `main` branch.
+- `index.html`: project descriptions, education, skills, and contact links
+- `styles.css`: layout and styling, including the mobile layout
+- `favicon.svg`: browser tab icon
 
-## Local preview
+## Run locally
 
-Run `python3 -m http.server 8097` in this folder, then open http://localhost:8097.
+From this folder:
 
-The existing React game source files are preserved separately from the portfolio and are not loaded by the site.
+```sh
+python3 -m http.server 8097
+```
+
+Then open http://localhost:8097.
+
+Changes pushed to `main` are published by GitHub Pages. The React game files in this repository are from an earlier project and aren't used by the portfolio.
